@@ -1,0 +1,12 @@
+"sandbox"
+{
+	"base"		"base"
+	"title"		"flatwars"
+	"category"	"pvp"
+	"maps"		""
+	"menusystem"	"1"
+
+	"settings"
+	{
+	}
+}

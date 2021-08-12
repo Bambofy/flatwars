@@ -1,0 +1,147 @@
+System:			flatwars
+Description:	a gamemode where players can build 2d bases and fight each other.
+
+
+Garrysmod - CSCI 1
+
+Requirements:	
+
+1.	A player class must be assigned to a player when they spawn.
+
+
+
+
+
+flatwars - CSCI 2
+-----------------
+
+Requirements
+------------
+	1.	A player class must be assigned to a player when they spawn.
+	2.	A player must view the world "sidewise".
+
+
+	Player Spawning - TLCSC 21
+	--------------------------
+
+	Purpose
+	-------
+		This component manages the actions performed when the player spawns.
+
+	Requirements Allocation
+	-----------------------
+		1.	CSCI 2 - 1
+
+
+
+		Player Spawn - Unit 211
+		-----------------------
+
+		Function
+		--------
+		This unit assigns the class of the player when s/he spawns.
+
+		Requirements Allocation
+		-----------------------
+		1.	CSCI 2 - 1
+
+
+		Custom Player - LLCSC 212
+		-------------------------
+
+		Purpose
+		-------
+		This component provides the custom player.
+
+		Requirements Allocation
+		-----------------------
+		1.	CSCI 2 - 1
+
+
+			Loadout - Unit 2121
+			-------------------
+
+			Function
+			--------
+			This unit performs the setup of the player when s/he spawns.
+
+			Requirements Allocation
+			-----------------------
+			1.	CSCI 2 - 1
+
+
+
+			Register - Unit 2122
+			--------------------
+
+			Function
+			--------
+			This unit registers the player class into the manager.
+
+			Requirements Allocation
+			-----------------------
+			1.	CSCI 2 - 1
+
+
+
+
+	Player Camera - TLCSC 22
+	------------------------
+
+	Purpose
+	-------
+	This restricts the player's camera to 2d plane.
+
+	Requirements Allocation
+	-----------------------
+	1.	CSCI 2 - 2
+
+
+		Add Hook - Unit 221
+		-------------------
+
+		Function
+		--------
+		This unit adds a hook to the calculate view unit.
+
+		Requirements Allocation
+		-----------------------
+		1.	CSCI 2 - 2
+
+
+		Calculate View - Unit 222
+		-------------------------
+
+		Function
+		--------
+		This unit re-calculates the player's view from the normal
+		1st person to a plane-fixed one.
+
+		Requirements Allocation
+		-----------------------
+		1.	CSCI 2 - 2
+
+
+		View Calculations - LLCSC 223
+		-----------------------------
+
+		Purpose
+		-------
+		This component allows the players view to be recalculated
+
+		Requirements Allocation
+		-----------------------
+		1.	CSCI 2 - 1
+
+
+			Calculate Origin - Unit 2231
+			----------------------------
+
+			Calculate Angle - Unit 2232
+			---------------------------
+
+			Calculate FOV - Unit 2233
+			-------------------------
+
+			Construct View Object - Unit 2234
+			---------------------------------
