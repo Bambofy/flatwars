@@ -1,5 +1,7 @@
 DEFINE_BASECLASS("gamemode_base")
 
+DeriveGamemode("sandbox")
+
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("Shared/DefaultPlayerClass.lua")
 AddCSLuaFile("Clientside/CameraControl.lua")
@@ -18,8 +20,6 @@ end
 
 function GM:PlayerSpawn(ply, transitioned)
 	PlayerClassControl_PlayerSpawned(ply)
-
 	BaseClass.PlayerSpawn(self, ply, transitioned)
-
 	LookControl_LookAxis(ply)
 end

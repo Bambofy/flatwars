@@ -1,4 +1,4 @@
-DEFINE_BASECLASS("gamemode_base")
+DeriveGamemode("sandbox")
 
 include("Clientside/CameraControl.lua")
 include("Shared/DefaultPlayerClass.lua")
