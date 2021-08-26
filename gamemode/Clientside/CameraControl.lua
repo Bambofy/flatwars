@@ -8,6 +8,5 @@ function CameraControl_CalculateView(ply, pos, angles, fov)
 end
 
 function CameraControl_AddHook()
-	print("CameraControl", "Adding view hook.")
 	hook.Add("CalcView", "NewCalcView", CameraControl_CalculateView)
 end

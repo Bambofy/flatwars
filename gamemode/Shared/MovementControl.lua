@@ -1,12 +1,3 @@
-
-local CMoveData = FindMetaTable("CMoveData")
-
-function CMoveData:RemoveKeys(keys)
-	-- Using bitwise operations to clear the key bits.
-	local newbuttons = bit.band(self:GetButtons(), bit.bnot(keys))
-	self:SetButtons(newbuttons)
-end
-
 function MovementControl_AddHook()
 	--[[hook.Add("InputMouseApply", "LockToPitchOnly", function( ccmd, x, y, angle )
 		-- By leaving angle.roll and angle.yaw alone, we effectively lock them
